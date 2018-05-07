@@ -1,0 +1,360 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC787F1920A07CCA005593EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC787F1820A07CCA005593EC /* AppDelegate.swift */; };
+		CC787F1C20A07CCA005593EC /* Miracles_Admin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC787F1A20A07CCA005593EC /* Miracles_Admin.xcdatamodeld */; };
+		CC787F1E20A07CCA005593EC /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC787F1D20A07CCA005593EC /* MasterViewController.swift */; };
+		CC787F2020A07CCA005593EC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC787F1F20A07CCA005593EC /* DetailViewController.swift */; };
+		CC787F2320A07CCA005593EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC787F2120A07CCA005593EC /* Main.storyboard */; };
+		CC787F2520A07CCB005593EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC787F2420A07CCB005593EC /* Assets.xcassets */; };
+		CC787F2820A07CCB005593EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC787F2620A07CCB005593EC /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CC787F1520A07CCA005593EC /* Miracles Admin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Miracles Admin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC787F1820A07CCA005593EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CC787F1B20A07CCA005593EC /* Miracles_Admin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Miracles_Admin.xcdatamodel; sourceTree = "<group>"; };
+		CC787F1D20A07CCA005593EC /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		CC787F1F20A07CCA005593EC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CC787F2220A07CCA005593EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC787F2420A07CCB005593EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC787F2720A07CCB005593EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CC787F2920A07CCB005593EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC787F1220A07CCA005593EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC787F0C20A07CCA005593EC = {
+			isa = PBXGroup;
+			children = (
+				CC787F1720A07CCA005593EC /* Miracles Admin */,
+				CC787F1620A07CCA005593EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC787F1620A07CCA005593EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC787F1520A07CCA005593EC /* Miracles Admin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC787F1720A07CCA005593EC /* Miracles Admin */ = {
+			isa = PBXGroup;
+			children = (
+				CC787F1820A07CCA005593EC /* AppDelegate.swift */,
+				CC787F1D20A07CCA005593EC /* MasterViewController.swift */,
+				CC787F1F20A07CCA005593EC /* DetailViewController.swift */,
+				CC787F2120A07CCA005593EC /* Main.storyboard */,
+				CC787F2420A07CCB005593EC /* Assets.xcassets */,
+				CC787F2620A07CCB005593EC /* LaunchScreen.storyboard */,
+				CC787F2920A07CCB005593EC /* Info.plist */,
+				CC787F1A20A07CCA005593EC /* Miracles_Admin.xcdatamodeld */,
+			);
+			path = "Miracles Admin";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC787F1420A07CCA005593EC /* Miracles Admin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC787F2C20A07CCB005593EC /* Build configuration list for PBXNativeTarget "Miracles Admin" */;
+			buildPhases = (
+				CC787F1120A07CCA005593EC /* Sources */,
+				CC787F1220A07CCA005593EC /* Frameworks */,
+				CC787F1320A07CCA005593EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Miracles Admin";
+			productName = "Miracles Admin";
+			productReference = CC787F1520A07CCA005593EC /* Miracles Admin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC787F0D20A07CCA005593EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Dilshan Liyanage";
+				TargetAttributes = {
+					CC787F1420A07CCA005593EC = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = CC787F1020A07CCA005593EC /* Build configuration list for PBXProject "Miracles Admin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC787F0C20A07CCA005593EC;
+			productRefGroup = CC787F1620A07CCA005593EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC787F1420A07CCA005593EC /* Miracles Admin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC787F1320A07CCA005593EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC787F2820A07CCB005593EC /* LaunchScreen.storyboard in Resources */,
+				CC787F2520A07CCB005593EC /* Assets.xcassets in Resources */,
+				CC787F2320A07CCA005593EC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC787F1120A07CCA005593EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC787F1920A07CCA005593EC /* AppDelegate.swift in Sources */,
+				CC787F1C20A07CCA005593EC /* Miracles_Admin.xcdatamodeld in Sources */,
+				CC787F1E20A07CCA005593EC /* MasterViewController.swift in Sources */,
+				CC787F2020A07CCA005593EC /* DetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CC787F2120A07CCA005593EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC787F2220A07CCA005593EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CC787F2620A07CCB005593EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC787F2720A07CCB005593EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC787F2A20A07CCB005593EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CC787F2B20A07CCB005593EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC787F2D20A07CCB005593EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3A63RN6MV8;
+				INFOPLIST_FILE = "Miracles Admin/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dilshan.Miracles-Admin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC787F2E20A07CCB005593EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3A63RN6MV8;
+				INFOPLIST_FILE = "Miracles Admin/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "dilshan.Miracles-Admin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC787F1020A07CCA005593EC /* Build configuration list for PBXProject "Miracles Admin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC787F2A20A07CCB005593EC /* Debug */,
+				CC787F2B20A07CCB005593EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC787F2C20A07CCB005593EC /* Build configuration list for PBXNativeTarget "Miracles Admin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC787F2D20A07CCB005593EC /* Debug */,
+				CC787F2E20A07CCB005593EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CC787F1A20A07CCA005593EC /* Miracles_Admin.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CC787F1B20A07CCA005593EC /* Miracles_Admin.xcdatamodel */,
+			);
+			currentVersion = CC787F1B20A07CCA005593EC /* Miracles_Admin.xcdatamodel */;
+			path = Miracles_Admin.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CC787F0D20A07CCA005593EC /* Project object */;
+}
