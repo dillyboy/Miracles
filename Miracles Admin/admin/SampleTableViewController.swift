@@ -9,17 +9,22 @@
 import UIKit
 import Firebase
 
+var selectedProduct: Product = Product()
+
 class SampleTableViewController: UITableViewController {
     var ref: DatabaseReference!
     var databaseHandle: DatabaseHandle!
     var productsArray : [Product] = [Product]()
+    var objects = [Any]()
     
     @IBOutlet var productsTable: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         productsTable.delegate = self
         productsTable.dataSource = self
+        self.title = currentCategory
 
         ref =  Database.database().reference()
         
@@ -29,11 +34,13 @@ class SampleTableViewController: UITableViewController {
                     let productName = product["name"]!! as! String
                     let productImage = product["displayPicture"]!! as! String
                     let productDescription = product["smallDescription"]!! as! String
+                    let productPrice = product["price"]!! as! Int
                     
                     let product  = Product()
                     product.displayPicture = productImage
                     product.name = productName
                     product.description = productDescription
+                    product.price = productPrice
                     
                     self.productsArray.append(product)
                 }
@@ -49,6 +56,7 @@ class SampleTableViewController: UITableViewController {
     }
 
     @IBAction func didClickOnExitButton(_ sender: Any) {
+        selectedProduct = Product()
         dismiss(animated: true, completion: nil)
     }
     
@@ -73,18 +81,22 @@ class SampleTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProductTableCell", for: indexPath) as! ProductTableViewCell
-
         cell.productName.text = productsArray[indexPath.row].name
         cell.productDescription.text = productsArray[indexPath.row].description
         cell.productImage.contentMode = .scaleAspectFill
         
         cell.productImage.downloadedFrom(link: productsArray[indexPath.row].displayPicture)
-        // cell.productImage.image = UIImage(named: productsArray[indexPath.row].displayPicture)
-        
-       // cell.productImage.image = UIImage(named: jewellery[indexPath.row])
-     //   cell.productName.text = jewellery[indexPath.row].capitalized
         
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetail" {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                selectedProduct = productsArray[indexPath.row]
+            }
+        }
+        
     }
  
 

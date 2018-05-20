@@ -11,5 +11,6 @@ class Product {
     var displayPicture : String = ""
     var name : String = ""
     var description : String = ""
+    var price : Int = 0
     
 }

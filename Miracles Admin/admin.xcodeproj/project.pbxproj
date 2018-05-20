@@ -24,6 +24,7 @@
 		CCBBC50A20A89EB600B831EA /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBBC50920A89EB600B831EA /* ProductsViewController.swift */; };
 		CCBBC50C20A8A1F600B831EA /* ProductsNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBBC50B20A8A1F600B831EA /* ProductsNavigationItem.swift */; };
 		CCBC681F20AED90A00741E2A /* SampleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBC681E20AED90A00741E2A /* SampleTableViewController.swift */; };
+		CCE4F26A20B1600B0051B3D8 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4F26920B1600B0051B3D8 /* ProductDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		CCBBC50920A89EB600B831EA /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
 		CCBBC50B20A8A1F600B831EA /* ProductsNavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsNavigationItem.swift; sourceTree = "<group>"; };
 		CCBC681E20AED90A00741E2A /* SampleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTableViewController.swift; sourceTree = "<group>"; };
+		CCE4F26920B1600B0051B3D8 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				CC978C5420B08CB9008004E9 /* Model */,
 				CC978C5520B09929008004E9 /* ProductTableViewCell.swift */,
 				CCB0D07420B0B66400463A02 /* urlExtension.swift */,
+				CCE4F26920B1600B0051B3D8 /* ProductDetailViewController.swift */,
 			);
 			path = admin;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				CCBBC4F120A7E4D100B831EA /* admin.xcdatamodeld in Sources */,
 				CCBBC50C20A8A1F600B831EA /* ProductsNavigationItem.swift in Sources */,
 				CCBBC50A20A89EB600B831EA /* ProductsViewController.swift in Sources */,
+				CCE4F26A20B1600B0051B3D8 /* ProductDetailViewController.swift in Sources */,
 				CCBBC50220A852E700B831EA /* categoryViewController.swift in Sources */,
 				CCBBC50420A884C000B831EA /* gradientExtension.swift in Sources */,
 				CCBBC4E920A7E4D000B831EA /* AppDelegate.swift in Sources */,
