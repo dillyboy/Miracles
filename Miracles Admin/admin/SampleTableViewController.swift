@@ -12,20 +12,18 @@ import Firebase
 class SampleTableViewController: UITableViewController {
     var ref: DatabaseReference!
     var databaseHandle: DatabaseHandle!
-    let jewellery = ["necklaces", "rings", "earrings", "bracelets", "anklets"]
     var productsArray : [Product] = [Product]()
     
     @IBOutlet var productsTable: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         productsTable.delegate = self
         productsTable.dataSource = self
 
         ref =  Database.database().reference()
         
-        databaseHandle = ref.child("products/Necklaces").observe(DataEventType.value) { (snapshot) in
+        databaseHandle = ref.child("products/\(currentCategory)").observe(DataEventType.value) { (snapshot) in
             if let allProducts = snapshot.value as? [String:AnyObject] {
                 for (_,product) in allProducts {
                     let productName = product["name"]!! as! String

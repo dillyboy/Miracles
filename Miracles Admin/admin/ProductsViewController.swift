@@ -7,11 +7,16 @@
 //
 
 import UIKit
+var currentCategory = ""
 
 class ProductsViewController: UISplitViewController, UISplitViewControllerDelegate {
 
+    var myString = String()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        currentCategory = myString.capitalized
+        
        self.preferredDisplayMode = .allVisible
         // Do any additional setup after loading the view.
     }
