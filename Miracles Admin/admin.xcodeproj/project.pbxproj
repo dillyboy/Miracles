@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		06808860B09C2DB462ECD65F /* Pods_admin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E75B8AC66F0F671F256FCE1 /* Pods_admin.framework */; };
 		CC978C5320B08C3E008004E9 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC978C5220B08C3E008004E9 /* Product.swift */; };
 		CC978C5620B09929008004E9 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC978C5520B09929008004E9 /* ProductTableViewCell.swift */; };
+		CCA6B4C920B1CA3A005F8C44 /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA6B4C820B1CA3A005F8C44 /* AddProductViewController.swift */; };
 		CCB0D07520B0B66400463A02 /* urlExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB0D07420B0B66400463A02 /* urlExtension.swift */; };
 		CCBBC4E920A7E4D000B831EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBBC4E820A7E4D000B831EA /* AppDelegate.swift */; };
 		CCBBC4EB20A7E4D000B831EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBBC4EA20A7E4D000B831EA /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 		CCBBC50C20A8A1F600B831EA /* ProductsNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBBC50B20A8A1F600B831EA /* ProductsNavigationItem.swift */; };
 		CCBC681F20AED90A00741E2A /* SampleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBC681E20AED90A00741E2A /* SampleTableViewController.swift */; };
 		CCE4F26A20B1600B0051B3D8 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4F26920B1600B0051B3D8 /* ProductDetailViewController.swift */; };
+		CCE4F26C20B1BBD90051B3D8 /* UITabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4F26B20B1BBD90051B3D8 /* UITabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,7 @@
 		9AD2086AC88DDE85AA7426CA /* Pods-admin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-admin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-admin/Pods-admin.debug.xcconfig"; sourceTree = "<group>"; };
 		CC978C5220B08C3E008004E9 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		CC978C5520B09929008004E9 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		CCA6B4C820B1CA3A005F8C44 /* AddProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductViewController.swift; sourceTree = "<group>"; };
 		CCB0D07420B0B66400463A02 /* urlExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = urlExtension.swift; sourceTree = "<group>"; };
 		CCBBC4E520A7E4D000B831EA /* admin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = admin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCBBC4E820A7E4D000B831EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +53,7 @@
 		CCBBC50B20A8A1F600B831EA /* ProductsNavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsNavigationItem.swift; sourceTree = "<group>"; };
 		CCBC681E20AED90A00741E2A /* SampleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTableViewController.swift; sourceTree = "<group>"; };
 		CCE4F26920B1600B0051B3D8 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		CCE4F26B20B1BBD90051B3D8 /* UITabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 				CC978C5520B09929008004E9 /* ProductTableViewCell.swift */,
 				CCB0D07420B0B66400463A02 /* urlExtension.swift */,
 				CCE4F26920B1600B0051B3D8 /* ProductDetailViewController.swift */,
+				CCE4F26B20B1BBD90051B3D8 /* UITabBarViewController.swift */,
+				CCA6B4C820B1CA3A005F8C44 /* AddProductViewController.swift */,
 			);
 			path = admin;
 			sourceTree = "<group>";
@@ -166,11 +172,12 @@
 				TargetAttributes = {
 					CCBBC4E420A7E4D000B831EA = {
 						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = CCBBC4E020A7E4D000B831EA /* Build configuration list for PBXProject "admin" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -257,10 +264,12 @@
 			files = (
 				CCBBC4EB20A7E4D000B831EA /* ViewController.swift in Sources */,
 				CCBBC4F120A7E4D100B831EA /* admin.xcdatamodeld in Sources */,
+				CCA6B4C920B1CA3A005F8C44 /* AddProductViewController.swift in Sources */,
 				CCBBC50C20A8A1F600B831EA /* ProductsNavigationItem.swift in Sources */,
 				CCBBC50A20A89EB600B831EA /* ProductsViewController.swift in Sources */,
 				CCE4F26A20B1600B0051B3D8 /* ProductDetailViewController.swift in Sources */,
 				CCBBC50220A852E700B831EA /* categoryViewController.swift in Sources */,
+				CCE4F26C20B1BBD90051B3D8 /* UITabBarViewController.swift in Sources */,
 				CCBBC50420A884C000B831EA /* gradientExtension.swift in Sources */,
 				CCBBC4E920A7E4D000B831EA /* AppDelegate.swift in Sources */,
 				CC978C5620B09929008004E9 /* ProductTableViewCell.swift in Sources */,
@@ -401,8 +410,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -415,10 +423,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3A63RN6MV8;
 				INFOPLIST_FILE = admin/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dilshan.admin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -434,10 +439,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3A63RN6MV8;
 				INFOPLIST_FILE = admin/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dilshan.admin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

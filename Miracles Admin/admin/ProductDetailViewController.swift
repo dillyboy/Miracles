@@ -17,6 +17,7 @@ class ProductDetailViewController: UIView {
     
     // UI Buttons
     @IBOutlet weak var editButton: UIButton!
+    @IBOutlet weak var deleteButton: UIButton!
     
     
     // UI Label
@@ -51,13 +52,10 @@ class ProductDetailViewController: UIView {
             
             productHeader.isHidden = false
             productEditView.isHidden = false
+        
         }
     }
     
-    
-    @IBAction func createNewPressed(_ sender: Any) {
-        print("open new")
-    }
     
     @IBAction func editPressed(_ sender: Any) {
         editState = !editState
@@ -71,6 +69,32 @@ class ProductDetailViewController: UIView {
         toggleEditState(enabled: editState)
     }
     
+    @IBAction func deletePressed(_ sender: Any) {
+        print("delete pressed")
+       // createAlert(title: "Login Failed", message: "Email or password is invalid!")
+        
+
+    }
+    
+//    init() {
+//        super.init(frame: UIScreen.main.bounds);
+//        print("My Custom Init");
+//        let gesture = UITapGestureRecognizer(target: self, action:  #selector (viewClicker(sender:)))
+//        self.deleteButton.addGestureRecognizer(gesture)
+//
+//        return;
+//
+//    }
+    
+//    required init?(coder aDecoder: NSCoder) {
+//        // fatalError("init(coder:) has not been implemented")
+//        return nil
+//    }
+    
+//    @objc func viewClicker(sender : UITapGestureRecognizer) {
+//        print("hi");
+//    }
+
     
     func fillForm() {
         productTypeField.text = currentCategory
@@ -87,7 +111,5 @@ class ProductDetailViewController: UIView {
         productSmallDescriptionField.isEnabled = enable
         productLargeDescriptionField.isEnabled = enable
     }
-    
-    
 
 }
