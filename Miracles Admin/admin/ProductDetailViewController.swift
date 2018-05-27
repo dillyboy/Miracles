@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SVProgressHUD
 
 class ProductDetailViewController: UIView {
 
@@ -18,6 +19,7 @@ class ProductDetailViewController: UIView {
     
     // UI Buttons
     @IBOutlet weak var editButton: UIButton!
+    @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var deleteButton: UIButton!
     
     
@@ -40,6 +42,7 @@ class ProductDetailViewController: UIView {
         productHeader.isHidden = true
         productEditView.isHidden = true
         emptyLabel.isHidden = false
+        saveButton.isEnabled = false
         toggleEditState(enabled: editState)
         if selectedProduct.name != "" {
             emptyLabel.isHidden = true
@@ -60,13 +63,40 @@ class ProductDetailViewController: UIView {
         editState = !editState
         
         if editState == true {
+            saveButton.isEnabled = true
             editButton.setTitle("Cancel", for: .normal)
         } else {
+            fillForm()
+            saveButton.isEnabled = false
             editButton.setTitle("Edit", for: .normal)
         }
         
         toggleEditState(enabled: editState)
     }
+    
+    @IBAction func savePressed(_ sender: Any) {
+        SVProgressHUD.show()
+        let newProductDictionary = ["name": productNameField.text!,
+                                    "displayPicture": selectedProduct.displayPicture,
+                                    "smallDescription": productSmallDescriptionField.text!,
+                                    "price": Int(productPriceField.text!)!,
+                                    "availability": true,
+                                    "type": currentCategory] as Any
+        
+        let myDatabase =  Database.database().reference().child("products").child(currentCategory)
+        myDatabase.updateChildValues([selectedProduct.key: newProductDictionary]) { (error, ref) in
+             SVProgressHUD.dismiss()
+            if error != nil {
+                print(error!)
+            } else {
+                self.saveButton.isEnabled = false
+                self.editButton.setTitle("Edit", for: .normal)
+                self.toggleEditState(enabled: false)
+                self.updateSelectedValues()
+            }
+        }
+    }
+    
     
     @IBAction func deletePressed(_ sender: Any) {
 
@@ -108,6 +138,13 @@ class ProductDetailViewController: UIView {
         productNameField.text = selectedProduct.name
         productPriceField.text = String(selectedProduct.price)
         productSmallDescriptionField.text = selectedProduct.description
+    }
+    
+    func updateSelectedValues() {
+        productName.text = productNameField.text!
+        selectedProduct.name = productNameField.text!
+        selectedProduct.price =  Int(productPriceField.text!)!
+        selectedProduct.description = productSmallDescriptionField.text!
     }
     
     func toggleEditState(enabled enable: Bool) {

@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -133,20 +134,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xKI-nQ-yz1">
-                                <rect key="frame" x="0.0" y="124" width="1024" height="170"/>
+                                <rect key="frame" x="0.0" y="64" width="1024" height="655"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="170" id="xhk-aW-7jJ"/>
-                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="akr-GQ-UHo">
                                     <size key="itemSize" width="120" height="150"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="categoryCell" id="kVP-rh-Utc" customClass="CustomCollectionViewCell" customModule="admin" customModuleProvider="target">
-                                        <rect key="frame" x="10" y="10" width="120" height="150"/>
+                                        <rect key="frame" x="10" y="60" width="120" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="120" height="150"/>
@@ -183,21 +181,34 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="SectionHeaderView" id="sSR-Pp-NVY" customClass="SectionHeaderView" customModule="admin" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jewellery" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKd-uB-xCU">
+                                            <rect key="frame" x="8" y="10" width="102" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="yKd-uB-xCU" firstAttribute="top" secondItem="sSR-Pp-NVY" secondAttribute="topMargin" constant="2" id="IFA-qR-lhC"/>
+                                        <constraint firstItem="yKd-uB-xCU" firstAttribute="leading" secondItem="sSR-Pp-NVY" secondAttribute="leadingMargin" id="SNE-qR-nAq"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="yKd-uB-xCU" secondAttribute="bottom" constant="2" id="rQo-Ph-ALQ"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="sectionHeaderlabel" destination="yKd-uB-xCU" id="k0H-bB-0Ft"/>
+                                    </connections>
+                                </collectionReusableView>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jewellery" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKd-uB-xCU">
-                                <rect key="frame" x="15" y="84" width="102" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="xKI-nQ-yz1" firstAttribute="leading" secondItem="7pC-Wn-DAN" secondAttribute="leading" id="74V-g0-ZbG"/>
                             <constraint firstItem="xKI-nQ-yz1" firstAttribute="trailing" secondItem="7pC-Wn-DAN" secondAttribute="trailing" id="I3a-6d-RUD"/>
-                            <constraint firstItem="xKI-nQ-yz1" firstAttribute="top" secondItem="7pC-Wn-DAN" secondAttribute="top" constant="60" id="PoI-L9-Vrv"/>
-                            <constraint firstItem="yKd-uB-xCU" firstAttribute="top" secondItem="7pC-Wn-DAN" secondAttribute="top" constant="20" id="YUh-Sf-d40"/>
-                            <constraint firstItem="yKd-uB-xCU" firstAttribute="leading" secondItem="7pC-Wn-DAN" secondAttribute="leading" constant="15" id="ZOr-Kt-Rt9"/>
+                            <constraint firstItem="7pC-Wn-DAN" firstAttribute="bottom" secondItem="xKI-nQ-yz1" secondAttribute="bottom" id="N27-fp-pUv"/>
+                            <constraint firstItem="xKI-nQ-yz1" firstAttribute="top" secondItem="7pC-Wn-DAN" secondAttribute="top" id="PoI-L9-Vrv"/>
                             <constraint firstItem="xKI-nQ-yz1" firstAttribute="leading" secondItem="7pC-Wn-DAN" secondAttribute="leading" id="r5f-6b-fbi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7pC-Wn-DAN"/>
@@ -286,6 +297,9 @@
                                                     <constraint firstAttribute="width" constant="24" id="4rg-10-JcY"/>
                                                 </constraints>
                                                 <state key="normal" image="save"/>
+                                                <connections>
+                                                    <action selector="savePressed:" destination="gt8-Jr-oaT" eventType="touchUpInside" id="4mg-px-jwf"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -527,6 +541,7 @@
                             <outlet property="productPriceField" destination="ntw-eX-T5J" id="pYW-qk-ZKe"/>
                             <outlet property="productSmallDescriptionField" destination="YjL-UI-AQK" id="b5g-Fu-G3b"/>
                             <outlet property="productTypeField" destination="U7u-Ot-fnO" id="cIJ-FX-cVY"/>
+                            <outlet property="saveButton" destination="hyc-Bw-NRz" id="hd5-36-rzR"/>
                         </connections>
                     </view>
                 </viewController>
@@ -823,7 +838,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJG-Sa-S7w">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJG-Sa-S7w">
                                                     <rect key="frame" x="118" y="28" width="194" height="63"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.46195539211863801" green="0.46195539211863801" blue="0.46195539211863801" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

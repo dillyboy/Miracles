@@ -156,7 +156,13 @@ class SampleTableViewController: UITableViewController,UISearchBarDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
-                selectedProduct = productsArray[indexPath.row]
+                print("navigate");
+                if searchActive {
+                    selectedProduct = filteredSearch[indexPath.row]
+                } else {
+                    selectedProduct = productsArray[indexPath.row]
+                }
+                
             }
         }
         
