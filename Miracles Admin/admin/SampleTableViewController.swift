@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SVProgressHUD
 
 var selectedProduct: Product = Product()
 
@@ -32,10 +33,12 @@ class SampleTableViewController: UITableViewController,UISearchBarDelegate {
         self.title = currentCategory
         
         ref =  Database.database().reference()
-        
+        SVProgressHUD.show()
         databaseHandle = ref.child("products/\(currentCategory)").observe(DataEventType.value) { (snapshot) in
             if let allProducts = snapshot.value as? [String:AnyObject] {
-                for (_,product) in allProducts {
+                self.productsArray = [Product]()
+                SVProgressHUD.dismiss()
+                for (key, product) in allProducts {
                     let productName = product["name"]!! as! String
                     let productImage = product["displayPicture"]!! as! String
                     let productDescription = product["smallDescription"]!! as! String
@@ -46,6 +49,7 @@ class SampleTableViewController: UITableViewController,UISearchBarDelegate {
                     product.name = productName
                     product.description = productDescription
                     product.price = productPrice
+                    product.key = key
                     
                     self.productsArray.append(product)
                 }
@@ -96,7 +100,7 @@ class SampleTableViewController: UITableViewController,UISearchBarDelegate {
             //                return false
             //            }
         }
-        print("filtered",filteredSearch)
+        // print("filtered",filteredSearch)
         
         
         if(filteredSearch.count == 0){
@@ -104,7 +108,7 @@ class SampleTableViewController: UITableViewController,UISearchBarDelegate {
         } else {
             searchActive = true;
         }
-        print("filtered",filteredSearch)
+      //  print("filtered",filteredSearch)
         self.tableView.reloadData()
     }
     

@@ -25,6 +25,7 @@
 		CCBBC50A20A89EB600B831EA /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBBC50920A89EB600B831EA /* ProductsViewController.swift */; };
 		CCBBC50C20A8A1F600B831EA /* ProductsNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBBC50B20A8A1F600B831EA /* ProductsNavigationItem.swift */; };
 		CCBC681F20AED90A00741E2A /* SampleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBC681E20AED90A00741E2A /* SampleTableViewController.swift */; };
+		CCD7809220BA672B00909F5A /* alertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD7809120BA672B00909F5A /* alertExtension.swift */; };
 		CCE4F26A20B1600B0051B3D8 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4F26920B1600B0051B3D8 /* ProductDetailViewController.swift */; };
 		CCE4F26C20B1BBD90051B3D8 /* UITabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4F26B20B1BBD90051B3D8 /* UITabBarViewController.swift */; };
 /* End PBXBuildFile section */
@@ -52,6 +53,7 @@
 		CCBBC50920A89EB600B831EA /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
 		CCBBC50B20A8A1F600B831EA /* ProductsNavigationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsNavigationItem.swift; sourceTree = "<group>"; };
 		CCBC681E20AED90A00741E2A /* SampleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTableViewController.swift; sourceTree = "<group>"; };
+		CCD7809120BA672B00909F5A /* alertExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alertExtension.swift; sourceTree = "<group>"; };
 		CCE4F26920B1600B0051B3D8 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 		CCE4F26B20B1BBD90051B3D8 /* UITabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,6 +119,7 @@
 				CCE4F26920B1600B0051B3D8 /* ProductDetailViewController.swift */,
 				CCE4F26B20B1BBD90051B3D8 /* UITabBarViewController.swift */,
 				CCA6B4C820B1CA3A005F8C44 /* AddProductViewController.swift */,
+				CCD7809120BA672B00909F5A /* alertExtension.swift */,
 			);
 			path = admin;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				CCBBC4F120A7E4D100B831EA /* admin.xcdatamodeld in Sources */,
 				CCA6B4C920B1CA3A005F8C44 /* AddProductViewController.swift in Sources */,
 				CCBBC50C20A8A1F600B831EA /* ProductsNavigationItem.swift in Sources */,
+				CCD7809220BA672B00909F5A /* alertExtension.swift in Sources */,
 				CCBBC50A20A89EB600B831EA /* ProductsViewController.swift in Sources */,
 				CCE4F26A20B1600B0051B3D8 /* ProductDetailViewController.swift in Sources */,
 				CCBBC50220A852E700B831EA /* categoryViewController.swift in Sources */,

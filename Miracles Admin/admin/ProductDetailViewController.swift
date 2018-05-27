@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ProductDetailViewController: UIView {
 
@@ -41,14 +42,12 @@ class ProductDetailViewController: UIView {
         emptyLabel.isHidden = false
         toggleEditState(enabled: editState)
         if selectedProduct.name != "" {
-            dump(selectedProduct)
             emptyLabel.isHidden = true
             fillForm()
             productName.text = selectedProduct.name
             
             productImage.contentMode = .scaleAspectFill
             productImage.downloadedFrom(link: selectedProduct.displayPicture)
-            
             
             productHeader.isHidden = false
             productEditView.isHidden = false
@@ -70,31 +69,39 @@ class ProductDetailViewController: UIView {
     }
     
     @IBAction func deletePressed(_ sender: Any) {
-        print("delete pressed")
-       // createAlert(title: "Login Failed", message: "Email or password is invalid!")
+
+        let alert = UIAlertController(title: "Delete Product", message: "Are you sure you want to delete this product?", preferredStyle: UIAlertControllerStyle.alert)
         
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.default, handler: { (action) in
+            alert.dismiss(animated: true, completion: nil)
+            
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Delete", style: UIAlertActionStyle.default, handler: { (action) in
+            alert.dismiss(animated: true, completion: nil)
+            let myDatabase =  Database.database().reference().child("products").child(currentCategory).child(selectedProduct.key)
+            myDatabase.removeValue { (error, ref) in
+                if error != nil {
+                    print(error!)
+                } else {
+                    self.resetForm()
+                }
+            }
+        }))
+        alert.show()
 
     }
     
-//    init() {
-//        super.init(frame: UIScreen.main.bounds);
-//        print("My Custom Init");
-//        let gesture = UITapGestureRecognizer(target: self, action:  #selector (viewClicker(sender:)))
-//        self.deleteButton.addGestureRecognizer(gesture)
-//
-//        return;
-//
-//    }
-    
-//    required init?(coder aDecoder: NSCoder) {
-//        // fatalError("init(coder:) has not been implemented")
-//        return nil
-//    }
-    
-//    @objc func viewClicker(sender : UITapGestureRecognizer) {
-//        print("hi");
-//    }
-
+    func resetForm() {
+        selectedProduct = Product()
+        if selectedProduct.name == "" {
+            emptyLabel.isHidden = false
+            
+            productHeader.isHidden = true
+            productEditView.isHidden = true
+            
+        }
+    }
     
     func fillForm() {
         productTypeField.text = currentCategory
