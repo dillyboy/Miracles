@@ -12,6 +12,7 @@ pod 'Firebase/Auth'
 pod 'Firebase/Database'
 pod 'SVProgressHUD'
 pod 'ChameleonFramework'
+pod 'Toast-Swift', '~> 3.0.1'
 
 end
 

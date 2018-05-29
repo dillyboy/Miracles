@@ -13,5 +13,6 @@ class Product {
     var description : String = ""
     var price : Int = 0
     var key : String = ""
+    var availability : Bool = true
     
 }

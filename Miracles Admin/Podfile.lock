@@ -48,6 +48,7 @@ PODS:
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
   - SVProgressHUD (2.2.5)
+  - Toast-Swift (3.0.1)
 
 DEPENDENCIES:
   - ChameleonFramework
@@ -55,6 +56,7 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Database
   - SVProgressHUD
+  - Toast-Swift (~> 3.0.1)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -70,6 +72,7 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - SVProgressHUD
+    - Toast-Swift
 
 SPEC CHECKSUMS:
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
@@ -84,7 +87,8 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  Toast-Swift: ba0b01b095aada709d915f9beb1d38184a2721c3
 
-PODFILE CHECKSUM: 28669f3f8ded11979dd1e487ee5ced1ab0ea3499
+PODFILE CHECKSUM: 862d33cba124ad55b1543f2bb19d2b9187ef0fec
 
 COCOAPODS: 1.5.0
