@@ -32,7 +32,7 @@ class CategoryViewController: UIViewController, UICollectionViewDelegate, UIColl
     }
     
      func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 3
+        return allCategories.count
     }
     
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

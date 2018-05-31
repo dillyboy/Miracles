@@ -15,13 +15,12 @@ class CoreDataHandler: NSObject {
         return appDelegate.persistentContainer.viewContext
     }
     
-    class func saveObject(username: String, password: String) -> Bool {
+    class func saveObject(message: String) -> Bool {
         let context = getContext()
         let entity = NSEntityDescription.entity(forEntityName: "User", in: context)
         let managedObject = NSManagedObject(entity: entity!, insertInto: context)
         
-        managedObject.setValue(username, forKey: "username")
-        managedObject.setValue(password, forKey: "password")
+        managedObject.setValue(message, forKey: "message")
         
         do {
             print("data saved")

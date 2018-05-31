@@ -29,6 +29,7 @@
 		CCD7809220BA672B00909F5A /* alertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD7809120BA672B00909F5A /* alertExtension.swift */; };
 		CCE4F26A20B1600B0051B3D8 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4F26920B1600B0051B3D8 /* ProductDetailViewController.swift */; };
 		CCE4F26C20B1BBD90051B3D8 /* UITabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE4F26B20B1BBD90051B3D8 /* UITabBarViewController.swift */; };
+		CCE8CAD620C07A7900B4E98B /* CoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE8CAD520C07A7900B4E98B /* CoreTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		CCD7809120BA672B00909F5A /* alertExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alertExtension.swift; sourceTree = "<group>"; };
 		CCE4F26920B1600B0051B3D8 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 		CCE4F26B20B1BBD90051B3D8 /* UITabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarViewController.swift; sourceTree = "<group>"; };
+		CCE8CAD520C07A7900B4E98B /* CoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				CCE4F26920B1600B0051B3D8 /* ProductDetailViewController.swift */,
 				CCE4F26B20B1BBD90051B3D8 /* UITabBarViewController.swift */,
 				CCA6B4C820B1CA3A005F8C44 /* AddProductViewController.swift */,
+				CCE8CAD520C07A7900B4E98B /* CoreTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 			files = (
 				CC6FE12020BD2A8700E82076 /* CoreDataHandler.swift in Sources */,
 				CCBBC4F120A7E4D100B831EA /* admin.xcdatamodeld in Sources */,
+				CCE8CAD620C07A7900B4E98B /* CoreTableViewController.swift in Sources */,
 				CCA6B4C920B1CA3A005F8C44 /* AddProductViewController.swift in Sources */,
 				CCD7809220BA672B00909F5A /* alertExtension.swift in Sources */,
 				CCBBC50A20A89EB600B831EA /* ProductsViewController.swift in Sources */,

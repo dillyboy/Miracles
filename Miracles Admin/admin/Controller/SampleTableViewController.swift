@@ -58,13 +58,6 @@ class SampleTableViewController: UITableViewController,UISearchBarDelegate {
                 self.productsTable.reloadData()
             }
         }
-        print("list2-----",self.productsArray)
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
     @IBAction func didClickOnExitButton(_ sender: Any) {
@@ -73,7 +66,6 @@ class SampleTableViewController: UITableViewController,UISearchBarDelegate {
     }
     
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
-        print("searchBarTextDidBeginEditing")
         searchActive = true;
     }
     
@@ -95,22 +87,14 @@ class SampleTableViewController: UITableViewController,UISearchBarDelegate {
             let tmp: NSString = product.name as NSString
             let range = tmp.range(of: searchText, options: NSString.CompareOptions.caseInsensitive)
             return range.location != NSNotFound
-            //            if let nameString = product.name,
-            //                let searchText = searchBar.text?.lowercased() {
-            //                return nameString.lowercased().contains(searchText)
-            //            } else {
-            //                return false
-            //            }
         }
-        // print("filtered",filteredSearch)
-        
         
         if(filteredSearch.count == 0){
             searchActive = false;
         } else {
             searchActive = true;
         }
-      //  print("filtered",filteredSearch)
+        
         self.tableView.reloadData()
     }
     
